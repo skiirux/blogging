@@ -1,0 +1,37 @@
+* {box-sizing: border-box;}
+.main{
+    font-family: 'lato', sans-serif;
+    font-size: 60px;
+    margin: 0 5px;
+    font-style: italic;   
+    color: rgb(42, 42, 204);
+}
+.main-down{
+    margin-top: 6px;
+    font-style: italic;
+     margin: 0 5px; 
+}
+.sign-in{
+    color: #fff;
+    text-decoration: none;
+}
+.sign-up{
+    color: #fff;
+    text-decoration: none;
+}
+.header-right button{
+    background-color: rgb(21, 21, 240);
+    padding: 5px;
+    width: 100px;
+}
+.header{
+     overflow: hidden; 
+     margin: 0;
+     
+}
+.header-right{
+     position: absolute; 
+    float: right;
+    right: 15px;
+    top: 20px;
+}

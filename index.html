@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+<!-- TODO: Include Google Fonts file here -->
+<!-- </head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+<!-- </body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scribbler</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <p class="main">ScriBBler</p>
+        <p class="main-down">Explore, Imagine, Create</p>
+        <div class="header-right">
+
+            <button id="myBtn1"><a href="#" class="sign-in">Sign In</a></button>
+            <button id="myBtn"><a href="#" class="sign-up">Sign Up</a></button>
+
+            <div id="myModal1" class="modal1">
+                <div class="modal-content">
+                    <span class="close1">&times;</span>
+                    <form>
+                        <h2>Welcome Back!</h2>
+                        <hr>
+                        <label for="uname">User Name </label><br>
+                        <input type="text" placeholder="Enter Username" required><br>
+                        <label for="pass">Password </label><br>
+                        <input type="password" placeholder="Enter Password" required><br>
+                        <button id="submit-btn1">Submit</button>
+                        <p class="notmember">Not a member?
+                            <span id="up">Sign Up</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form>
+
+                        <h2>Get Started</h2>
+                        <hr>
+                        <label for="fname">Full Name </label><br>
+                        <input type="text" placeholder="Enter Full Name" required><br>
+                        <label for="uname">User Name </label><br>
+                        <input type="text" placeholder="Enter Username" required><br>
+                        <label for="pass">Password </label><br>
+                        <input type="password" placeholder="Enter Password" required><br>
+                        <label for="confirmpass">Confirm Password </label><br>
+                        <input type="password" placeholder="Confirm Password" required><br>
+                        <button id="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="post-Buttons">
+        <button><a href="./html/postslist.html">All Posts</a></button>
+        <button id="myBtn2"><a href="#" class="Create-post">Create Post</a></button>
+    </div>
+    <div id="myModal2" class="modal2">
+        <div class="modal-content1">
+            <span class="close2">&times;</span>
+            <h2>Pen Your Post</h2>
+            <label for="title">Title:</label>
+            <input class="text" type="text">
+            <label for="content">Content:</label>
+            <textarea name="content" cols="100" rows="15"></textarea>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
