@@ -1,4 +1,7 @@
-body{background-color: rgba(241, 97, 44, 0.856);}
+body{background-color: orange;
+    margin: 0;
+    position: relative;
+}
 * {box-sizing: border-box;}
 .main{
     font-family: 'lato', sans-serif;
@@ -37,17 +40,9 @@ body{background-color: rgba(241, 97, 44, 0.856);}
     top: 20px;
 }
 
-
-
-
-
-
-
-
-
 .post {
     position: relative;
-    width: 40%;
+    width: 45%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px;
@@ -77,11 +72,11 @@ body{background-color: rgba(241, 97, 44, 0.856);}
 }
 
 .post-title{
-    font-family: 'Itim', cursive;
+    font-family: 'lato', sans-serif;
     font-weight: bold;
     color: #2b312b;
-    font-size: 25px;
-    height: 25px;
+    font-size: 26px;
+    height: 26px;
     overflow: auto;
 }
 
@@ -89,26 +84,16 @@ body{background-color: rgba(241, 97, 44, 0.856);}
     float: right;
     cursor: pointer;
     font-size: 18px;
-    margin-right: 0 !important;
-    padding-right: 0 !important;
+    margin-right: 0 ;
+    padding-right: 0 ;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .post-desc{
     height: 85px;
-    margin-bottom: 0 !important;
+    margin-bottom: 0 ;
     overflow: hidden;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin: 0 !important;
-    color: #fff;
-    background-color: orange;
-    background-size: 2000% 2000%;
 }
 
 .allPostsContainer {
@@ -127,25 +112,24 @@ body {
 
 /* The Modal (background) */
 .trash-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+     display: none;  
+    position: fixed;
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0,0.4); /* Fallback color */
 }
 
 /* Modal Content/Box */
 .trash-modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 30%; 
     text-align: center;
 }
 
