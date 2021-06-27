@@ -1,138 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scribbler</title>
+    <link rel="stylesheet" href="C:\Users\mohit\OneDrive\Documents\Scribller Website\css\postslist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<!-- TODO: Include code for header here -->
+
+<!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
 <body>
-    <!-- TODO: Include code for header here -->
+    <div class="header">
+        <p class="main">ScriBBler</p>
+        <p class="main-down">Explore, Imagine, Create</p>
+        <div class="header-right">
 
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+            <button id="myBtn1"><a href="#" class="sign-in">Sign In</a></button>
+            <button id="myBtn"><a href="#" class="sign-up">Sign Up</a></button>
+        </div>
+    </div>
 
-    <!-- list of all posts starts here -->
-    <div>
+    <div class="postMainLayout">
 
-        <!-- post 1 starts here -->
-        <div>
-            <div>
-                <p>Srishti Gupta</p>
-            </div>
 
-            <div>
-                <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
-                    variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
-                    purpose, they are different.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
+        <div class="blogContent">
+            <div id="blogTitle" class="blogTite">
+                <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
             </div>
         </div>
-        <!-- post 1 ends here -->
+        <div class="blogAuthor">
 
-        <!-- post 2 starts here -->
-        <div>
-            <div>
-                <p>Colby Fayock</p>
+            <!-- Insert code for Edit/Save button and  -->
+            <p class="postAuthor">Jimi</p>
+            <div id="editPost" onclick="toggleEditSave()">
+                <button class="postEdit" id="edtPstBtn">Edit
+                    <i style="font-size: 14px;font-weight: bolder;" class="fa fa-pencil-square-o"
+                        aria-hidden="true"></i>
+                </button>
+
             </div>
 
-            <div>
-                <div>
-                    <p>What is linting and how can it save you time?</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get
-                    more of, but linting can help us make the most out of the time we have.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
+        </div>
+
+        <div class="blogText" id="blogBodyId">
+            <p id="blogBody">
+                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded
+                the range and vocabulary
+                of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical
+                ability
+                and creative application of such effects as distortion forever transformed the sound of rock and roll.
+                While
+                creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues,
+                R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored
+                overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously
+                undesirable
+                technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream
+                rock.[348]
+                He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the
+                low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of
+                "Little
+                Wing", which allowed him to sustain the root note of chords while also playing melody. This method has
+                been
+                described as piano style, with the thumb playing what a pianist's left hand would play and the other
+                fingers
+                playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability
+                to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist
+                was
+                performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock
+                music
+                recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the
+                instrument
+                as an electronic sound source. Players before him had experimented with feedback and distortion, but
+                Hendrix
+                turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues
+                with
+                which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and
+                after
+                Hendrix."
+            </p>
+        </div>
+        <div>
+            <button class="postLike" onclick="incrementCounter()">Like
+                <i style="font-size: 14px;font-weight: bolder;" class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+            </button>
+            <p style="font-size: 10px; font-family: 'lato', sans-serif;padding-left: 5px">
+                <spna style="font-size: 10px; font-family: 'Abel', sans-serif;padding-left: 5px" id="counterLikedBy">1
+                </spna> person likes this!
+            </p>
+            <div style="font-family: 'lato', sans-serif; padding-left: 5px">Be the first one to like this!</div>
+        </div>
+
+
+        <div class="commentPost">
+            <textarea id="txtCommentCommentPost" class="commentPost" rows="4" cols="100"
+                placeholder="Leave a comment"></textarea>
+        </div>
+        <button class="postLike" onclick="addComment()">Comment</button>
+        <div class="commentSection">
+            <h3>All Comments</h3>
+            <div class="allComments" id="listAllComments">
+
             </div>
         </div>
-        <!-- post 2 ends here -->
-
-        <!-- post 3 starts here -->
-        <div>
-            <div>
-                <p>Yazeed Bzadough</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>How to Get More Views on Your Tech Blog</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a
-                    blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable
-                    name in the industry.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
-        </div>
-        <!-- post 3 ends here -->
-
-        <!-- post 4 starts here -->
-        <div>
-            <div>
-                <p>Cedd Burge</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>How to write easily describable code</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p>When code is not describable using words, most people have to do some mental mapping to turn it in to
-                    words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different
-                    people will map to different words, which
-                    leads to confusion when discussing the code.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
-        </div>
-        <!-- post 4 ends here -->
-
-        <!-- post 5 starts here -->
-        <div>
-            <div>
-                <p>Srishti Gupta</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing
-                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
-                    say that you’ve created a module
-                    named xyz.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
-        </div>
-        <!-- post 5 ends here -->
-        <!-- TODO: Write code for delete post modal here -->
 
     </div>
-    <!-- list of all posts ends here -->
+    <script src="../js/postslist.js"></script>
+
 </body>
 
 </html>
