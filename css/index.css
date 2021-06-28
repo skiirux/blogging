@@ -37,6 +37,7 @@ body{
 }
 #up{
     color: rgb(50, 50, 228);
+    cursor: pointer;
 }
 
 .modal-content{
@@ -89,14 +90,15 @@ form{
     width: 50%;
     font-size: 18px;
 }
-#submit-btn, #submit-btn1{
+#submit-btn, #submit-btn1, #submit-btn2{
    width: 100%;
    background-color: rgb(118, 194, 5);
    color: #fff;
    margin-top: 2%;
     border: transparent;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 hr{

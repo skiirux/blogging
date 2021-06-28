@@ -15,6 +15,9 @@
 </head>
 
 <body>
+
+    <!-- header section starts here -->
+
     <div class="header">
         <p class="main">ScriBBler</p>
         <p class="main-down">Explore, Imagine, Create</p>
@@ -22,6 +25,8 @@
 
             <button onclick="showSignInModal" id="myBtn1"><a href="#" class="sign-in">Sign In</a></button>
             <button onclick="showSignUpModal" id="myBtn"><a href="#" class="sign-up">Sign Up</a></button>
+
+            <!-- sign in modal section -->
 
             <div id="myModal1" class="modal1">
                 <div class="modal-content">
@@ -40,6 +45,8 @@
                     </form>
                 </div>
             </div>
+
+            <!-- sign up modal section -->
 
             <div id="myModal" class="modal">
                 <div class="modal-content">
@@ -60,10 +67,10 @@
                     </form>
                 </div>
             </div>
-
+            <script src="../js/index.js"></script>
         </div>
     </div>
-    <script src="../js/index.js"></script>
+    <!-- here are the contents of the posts -->
 
     <div class="allPostsContainer">
         <div class="post">
@@ -230,7 +237,7 @@
                     <i class="fa fa-trash" style="font-size:24px"></i>
                 </div>
 
-                <p class="post-title">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                <p class="post-title">Everything you should know about Node.js</p>
                 <p class="post-description">
 
                     Node.js treats each JavaScript file as a separate module. For instance, if you have a file
@@ -259,6 +266,7 @@
         </div>
 
     </div>
+
     <script src="../js/bloglist.js"></script>
 
 </body>

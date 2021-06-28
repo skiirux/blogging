@@ -193,6 +193,7 @@ body{background-color: orange;
 }
 #up{
     color: rgb(50, 50, 228);
+    cursor: pointer;
 }
 
 .modal-content{
@@ -253,6 +254,7 @@ form{
     border: transparent;
     font-size: 20px;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 hr{

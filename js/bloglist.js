@@ -28,3 +28,10 @@ trashFunctions(5)
 function navigateToPost() {
     location.href = "postslist.html";
 }
+// on clicking signup modal will open
+
+var signup = document.getElementById('up');
+signup.onclick = function () {
+    myModal.style.display = "none";
+    myModal.style.display = "block";
+}

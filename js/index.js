@@ -1,4 +1,5 @@
 'use Strict'
+// sign up modal section 
 const modal = document.getElementById("myModal");
 const Btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
@@ -13,6 +14,8 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+//  sign in modal section 
+
 var modal1 = document.getElementById("myModal1");
 var Btn1 = document.getElementById("myBtn1");
 var span1 = document.getElementsByClassName("close1")[0];
@@ -27,6 +30,7 @@ window.onclick = function (event) {
         modal1.style.display = "none";
     }
 }
+// create post section
 var modal2 = document.getElementById("myModal2");
 var Btn2 = document.getElementById("myBtn2");
 var span2 = document.getElementsByClassName("close2")[0];
@@ -40,4 +44,10 @@ window.onclick = function (event) {
     if (event.target == modal2) {
         modal2.style.display = "none";
     }
+}
+//signup section clicking on signup opens thos modal
+var signup = document.getElementById('up');
+signup.onclick = function () {
+    myModal.style.display = "none";
+    myModal.style.display = "block";
 }

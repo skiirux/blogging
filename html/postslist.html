@@ -28,14 +28,53 @@
             <button id="myBtn"><a href="#" class="sign-up">Sign Up</a></button>
         </div>
     </div>
+    <div id="myModal1" class="modal1">
+        <div class="modal-content">
+            <span class="close1">&times;</span>
+            <form>
+                <h2>Welcome Back!</h2>
+                <hr>
+                <label for="uname">User Name </label><br>
+                <input type="text" placeholder="Enter Username" required><br>
+                <label for="pass">Password </label><br>
+                <input type="password" placeholder="Enter Password" required><br>
+                <button id="submit-btn1">Submit</button>
+                <p class="notmember">Not a member?
+                    <span id="up">Sign Up</span>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+
+                <h2>Get Started</h2>
+                <hr>
+                <label for="fname">Full Name </label><br>
+                <input type="text" placeholder="Enter Full Name" required><br>
+                <label for="uname">User Name </label><br>
+                <input type="text" placeholder="Enter Username" required><br>
+                <label for="pass">Password </label><br>
+                <input type="password" placeholder="Enter Password" required><br>
+                <label for="confirmpass">Confirm Password </label><br>
+                <input type="password" placeholder="Confirm Password" required><br>
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    </div>
 
     <div class="postMainLayout">
 
 
-        <div class="blogContent">
-            <div id="blogTitle" class="blogTite">
-                <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
-            </div>
+        <div class="blogTitle">
+
+            <h1 id="blogTitleNew">The legacy of Jimi Hendrix</h1>
         </div>
         <div class="blogAuthor">
 
@@ -53,27 +92,39 @@
 
         <div class="blogText" id="blogBodyId">
             <p id="blogBody">
-                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded
+                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix
+                expanded
                 the range and vocabulary
-                of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical
+                of the electric guitar into areas no musician had ever ventured before. His boundless drive,
+                technical
                 ability
-                and creative application of such effects as distortion forever transformed the sound of rock and roll.
+                and creative application of such effects as distortion forever transformed the sound of rock and
+                roll.
                 While
-                creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues,
-                R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored
-                overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously
+                creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including
+                blues,
+                R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix
+                favored
+                overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the
+                previously
                 undesirable
-                technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream
+                technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in
+                mainstream
                 rock.[348]
-                He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the
-                low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of
+                He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting
+                the
+                low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars
+                of
                 "Little
-                Wing", which allowed him to sustain the root note of chords while also playing melody. This method has
+                Wing", which allowed him to sustain the root note of chords while also playing melody. This method
+                has
                 been
                 described as piano style, with the thumb playing what a pianist's left hand would play and the other
                 fingers
-                playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability
-                to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist
+                playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an
+                ability
+                to play rhythm chords and lead lines together, giving the audio impression that more than one
+                guitarist
                 was
                 performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock
                 music
@@ -81,40 +132,38 @@
                 instrument
                 as an electronic sound source. Players before him had experimented with feedback and distortion, but
                 Hendrix
-                turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues
+                turned those effects and others into a controlled, fluid vocabulary every bit as personal as the
+                blues
                 with
-                which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and
+                which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix
+                and
                 after
                 Hendrix."
             </p>
         </div>
         <div>
-            <button class="postLike" onclick="incrementCounter()">Like
-                <i style="font-size: 14px;font-weight: bolder;" class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <!-- like button -->
 
-            </button>
-            <p style="font-size: 10px; font-family: 'lato', sans-serif;padding-left: 5px">
-                <spna style="font-size: 10px; font-family: 'Abel', sans-serif;padding-left: 5px" id="counterLikedBy">1
-                </spna> person likes this!
-            </p>
-            <div style="font-family: 'lato', sans-serif; padding-left: 5px">Be the first one to like this!</div>
-        </div>
+            <button onclick="thumb()" class="like" id="likes"><span class="thumb"><i class="fa fa-thumbs-up"
+                        aria-hidden="true"></i></span>Like</button>
+            <p class="first" id="count">Be the first one to like this!</p>
 
-
-        <div class="commentPost">
-            <textarea id="txtCommentCommentPost" class="commentPost" rows="4" cols="100"
-                placeholder="Leave a comment"></textarea>
-        </div>
-        <button class="postLike" onclick="addComment()">Comment</button>
-        <div class="commentSection">
-            <h3>All Comments</h3>
-            <div class="allComments" id="listAllComments">
-
+            <!-- comments -->
+            <div class="commentPost">
+                <textarea id="txtCommentCommentPost" class="commentPost" rows="4" cols="100"
+                    placeholder="Leave a comment"></textarea>
             </div>
-        </div>
+            <button class="postLike" onclick="addComment()">Comment</button>
+            <div class="commentSection">
+                <h3>All Comments</h3>
+                <div class="allComments" id="listAllComments">
 
-    </div>
-    <script src="../js/postslist.js"></script>
+                </div>
+            </div>
+
+        </div>
+        <script src="../js/index.js"></script>
+        <script src="../js/postslist.js"></script>
 
 </body>
 

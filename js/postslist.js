@@ -1,12 +1,4 @@
-function editComment() {
-
-}
-function incrementCounter() {
-    var cntr = document.getElementById('counterLikedBy');
-    var val = parseInt(cntr.innerText);
-    cntr.innerText = val + 1;
-
-}
+// to edit the post content
 
 function toggleEditSave() {
     var toggleSave = '<button class="postEdit">Save ' +
@@ -17,6 +9,8 @@ function toggleEditSave() {
         '<i style="font-size: 14px;font-weight: bolder;" ' +
         'class="fa fa-pencil-square-o" aria-hidden="true"></i>' +
         '</button>';
+
+    // to save the editable text
 
     var edtSaveBtn = document.getElementById('editPost');
     var toDo = (edtSaveBtn.innerText).toString().trim();
@@ -63,6 +57,7 @@ function updateEditedBlog() {
     getDiv.innerHTML = pElement;
 
 }
+// to add comments
 function addComment() {
     console.log("Inside add comment");
     var x = document.getElementById("txtCommentCommentPost").addEventListener("onchange", function () {
@@ -75,4 +70,19 @@ function addComment() {
     var pElement = '<p >' + x + '</p>';
     var getDiv = document.getElementById('listAllComments');
     getDiv.innerHTML = pElement + getDiv.innerHTML;
+}
+// clicking on signup button will open the sign up model
+var signup = document.getElementById('up');
+signup.onclick = function () {
+    myModal.style.display = "none";
+    myModal.style.display = "block";
+}
+// this is for the likes section
+var Counts = document.getElementById("count");
+var Likes = document.getElementById("likes");
+var count = 0;
+function thumb() {
+    count += 1;
+    Likes.innerHTML = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>' + " Liked!";
+    Counts.innerHTML = count + " Person Likes This!";
 }
